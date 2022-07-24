@@ -1,6 +1,6 @@
 import AppRoutes from "./components/routes";
 
-function App() {
+const App = () => {
   return (
     <AppRoutes />
   );
