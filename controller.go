@@ -4,6 +4,7 @@ import (
 	"net/http"
 )
 
-func spa(responseWriter http.ResponseWriter, request *http.Request) {
-	http.ServeFile(responseWriter, request, "./spa/build/index.html")
+func spa(w http.ResponseWriter, r *http.Request) {
+	enableCors(&w)
+	http.ServeFile(w, r, "./spa/build/index.html")
 }

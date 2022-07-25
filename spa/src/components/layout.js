@@ -40,7 +40,7 @@ const Layout = () => {
                         viewBox="0 0 24 24"
                         width="30px"
                         fill="#f5f5f5"
-                        class="cartIcon"
+                        className="cartIcon"
                     >
                             <path d="M0 0h24v24H0V0z" fill="none" />
                             <path
@@ -55,7 +55,7 @@ const Layout = () => {
                     >
                 </div>
             </nav>
-            <div class="pageWrapper">
+            <div className="pageWrapper">
             </div>
             <footer>Water St. CD & Vinyl by Elijah Bules &copy; 2022</footer>
         </>
