@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"net/http"
 )
 
@@ -11,5 +12,6 @@ func main() {
 
 	routes()
 
+	log.Print("Started server at http://localhost:8080/")
 	http.ListenAndServe(":8080", nil)
 }
