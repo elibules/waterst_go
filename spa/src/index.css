@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@300;400&family=Yeseva+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@300;400&family=Yeseva+One&display=swap");
 
 /* 
 font-family: 'Josefin Sans', sans-serif;
@@ -11,12 +11,12 @@ font-family: 'Yeseva One', cursive; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato';
+  font-family: "Lato";
 }
 
 html,
 body {
-  height: 100%
+  height: 100%;
 }
 
 h1,
@@ -26,16 +26,15 @@ h4,
 h5,
 h6,
 p {
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 
 nav {
-
   width: 100%;
   height: 6rem;
   padding-right: 3rem;
   padding-left: 3rem;
-  padding-top: .75rem;
+  padding-top: 0.75rem;
   display: flex;
   justify-content: space-between;
   /* border-bottom: 2px solid black; */
@@ -44,7 +43,7 @@ nav {
 }
 
 .navTitle {
-  font-family: 'Yeseva One', cursive;
+  font-family: "Yeseva One", cursive;
   font-size: 48px;
   margin-bottom: 2rem;
 }
@@ -53,20 +52,19 @@ nav {
   display: flex;
   justify-content: space-around;
   max-width: 600px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 22px;
   height: fit-content;
   margin-top: auto;
-  margin-bottom: .5rem;
-
+  margin-bottom: 0.5rem;
 }
 
 .links a {
   text-decoration: none;
   color: whitesmoke;
-  padding: .3rem;
-  padding-left: .7rem;
-  padding-right: .7rem;
+  padding: 0.3rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
   border: 2px solid #ff5e57;
   position: relative;
 }
@@ -78,9 +76,9 @@ nav {
 
 #loginProfileLinks {
   height: 100%;
-  padding: .3rem;
-  padding-left: .7rem;
-  padding-right: .7rem;
+  padding: 0.3rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
 }
 
 #loginProfileLinks a svg {
@@ -129,12 +127,11 @@ nav {
 .filterSelect {
   height: 30px;
   width: 140px;
-  font-size: 13px
+  font-size: 13px;
 }
 
 .inputLabel {
   display: flex;
-
 }
 
 .inputLabel input {
@@ -155,7 +152,6 @@ nav {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, 270px);
-
 }
 
 .productCard {
@@ -185,7 +181,7 @@ nav {
   margin-left: 3rem;
   margin-right: 3rem;
   color: #0fbcf9;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 25px;
   width: fit-content;
   cursor: pointer;
@@ -228,11 +224,11 @@ nav {
 .addToCart {
   min-height: 40px;
   width: fit-content;
-  padding-left: .5rem !important;
-  padding-right: .5rem !important;
-  padding-top: .5rem !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  padding-top: 0.5rem !important;
   border: 2px solid black;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homeContent {
@@ -243,14 +239,14 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* background-image: url('../images/landing.jpg'); */
+  background-image: url("images/landing.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
 }
 
 .homeImg {
-  /* background-image: url('../images/records1.jpg'); */
+  /* background-image: url('images/records1.jpg'); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -276,15 +272,14 @@ nav {
 }
 
 .homeContent-text h1 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 52px;
-
 }
 
 .homeContent-text p {
   max-width: clamp(300px, 600px, 900px);
   font-size: 22px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   margin-bottom: 2rem;
 }
 
@@ -292,13 +287,12 @@ nav {
   margin-top: 2rem;
   color: black;
   text-decoration: none;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 25px;
-  padding: .75rem;
-  padding-bottom: .25rem;
+  padding: 0.75rem;
+  padding-bottom: 0.25rem;
   border: 2px solid black;
   background-color: rgb(245, 245, 245);
-
 }
 
 .goToButton:hover {
@@ -315,7 +309,7 @@ nav {
 .pageHeader {
   width: 100%;
   font-size: 48px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   margin-top: 2rem;
   text-align: center;
 }
@@ -341,14 +335,14 @@ nav {
 
 .contactContent form input {
   width: 100%;
-  margin: .5rem;
+  margin: 0.5rem;
   padding: 4px;
   border: 1px solid black;
 }
 
 .contactContent form textarea {
   width: 100%;
-  margin: .5rem;
+  margin: 0.5rem;
   padding: 4px;
   height: 150px;
   border: 1px solid black;
@@ -388,7 +382,7 @@ nav {
   top: 10px;
   font-size: 20px;
   font-weight: bold;
-  padding: .25rem;
+  padding: 0.25rem;
   background-color: #fa463d;
   color: whitesmoke;
   width: 20px;
@@ -403,7 +397,7 @@ nav {
 #resetCart {
   cursor: pointer;
   color: #0fbcf9;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 #resetCart:hover {
@@ -440,7 +434,7 @@ nav {
 
 .cartItem-right {
   margin-left: 1rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .itemTitle {
@@ -508,7 +502,6 @@ nav {
   height: 200px;
   border-radius: 5px;
 }
-
 
 .cartModal-content a {
   margin-left: 10px;
