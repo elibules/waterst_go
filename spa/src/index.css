@@ -394,13 +394,13 @@ nav {
   cursor: pointer;
 }
 
-#resetCart {
+.clickText {
   cursor: pointer;
   color: #0fbcf9;
   font-family: "Josefin Sans", sans-serif;
 }
 
-#resetCart:hover {
+.clickText:hover {
   color: #3c40c6;
   text-decoration: underline;
 }

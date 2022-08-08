@@ -1,6 +1,16 @@
+import { useState } from "react";
+import { useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
 
 const Layout = () => {
+  const [cartNum, setCartNum] = useState(0);
+
+  useEffect(() => {
+    localStorage.getItem("cartNumber")
+      ? setCartNum(parseInt(localStorage.getItem("cartNumber")))
+      : localStorage.setItem("cartNumber", "0");
+  }, [cartNum]);
+
   return (
     <>
       <nav>
@@ -57,12 +67,12 @@ const Layout = () => {
                       0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
               />
             </svg>
-            <span id="cartNumber">0</span>
+            <span id="cartNumber">{String(cartNum)}</span>
           </Link>
         </div>
       </nav>
       <div className="pageWrapper">
-        <Outlet />
+        <Outlet context={[cartNum, setCartNum]} />
       </div>
       <footer>Water St. CD & Vinyl by Elijah Bules &copy; 2022</footer>
     </>

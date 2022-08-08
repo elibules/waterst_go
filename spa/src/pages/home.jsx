@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div class="homeContent">
-        <div class="homeContent-text">
+      <div className="homeContent">
+        <div className="homeContent-text">
           <h1>Welcome to our store!</h1>
           <p>
             Our complete catalog of used CD and Vinyl is available for purchase
@@ -12,7 +12,7 @@ const Home = () => {
             for help finding exactly what you need or to test any of the music
             that we have in stock.
           </p>
-          <Link to="/shop" class="goToButton">
+          <Link to="/shop" className="goToButton">
             All Products
           </Link>
         </div>
