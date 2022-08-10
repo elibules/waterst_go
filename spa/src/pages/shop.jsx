@@ -3,8 +3,22 @@ import { Link, useOutletContext } from "react-router-dom";
 
 const Shop = () => {
   const [cartNum, setCartNum] = useOutletContext();
+  const [format, setFormat] = useState("");
+  const [condition, setCondition] = useState("");
+  const [category, setCategoy] = useState("");
+  const [sort, setSort] = useState("");
 
-  const clearFilters = () => {};
+  const clearFilters = () => {
+    console.log("filters cleared");
+  };
+
+  const filterItems = (event) => {
+    console.log("filtered");
+  };
+
+  const sortItems = (event) => {
+    console.log("sorted");
+  };
 
   return (
     <>
@@ -12,8 +26,13 @@ const Shop = () => {
       <div className="shopWrapper">
         <div className="shopFilters">
           <div id="filters">
-            <h5>Format</h5>
-            <select name="format" id="format" className="filterSelect">
+            <h5 className="filterTitle">Format</h5>
+            <select
+              onChange={filterItems}
+              name="format"
+              id="format"
+              className="filterSelect"
+            >
               <option value="" className="filterInput">
                 All
               </option>
@@ -25,8 +44,13 @@ const Shop = () => {
               </option>
             </select>
             <br />
-            <h5>Condition</h5>
-            <select name="condition" id="condition" className="filterSelect">
+            <h5 className="filterTitle">Condition</h5>
+            <select
+              onChange={filterItems}
+              name="condition"
+              id="condition"
+              className="filterSelect"
+            >
               <option value="" className="filterInput">
                 All
               </option>
@@ -44,7 +68,7 @@ const Shop = () => {
               </option>
             </select>
             <div
-              class="inputLabel"
+              className="inputLabel"
               style={{
                 marginTop: "0px",
                 marginBottom: "10px",
@@ -52,8 +76,13 @@ const Shop = () => {
                 flexDirection: "column",
               }}
             >
-              <h5 style={{ marginTop: "10px" }}>Category</h5>
-              <select name="category" id="category" className="filterSelect">
+              <h5 className="filterTitle">Category</h5>
+              <select
+                onChange={filterItems}
+                name="category"
+                id="category"
+                className="filterSelect"
+              >
                 <option value="" default className="filterInput">
                   All
                 </option>
@@ -77,19 +106,24 @@ const Shop = () => {
                 </option>
               </select>
             </div>
-            <span className="clickText" onclick={clearFilters}>
+            <span className="clickText" onClick={clearFilters}>
               Clear Filters
             </span>
             <div
-              class="inputLabel"
+              className="inputLabel"
               style={{
                 marginTop: "0px",
                 display: "flex",
                 flexDirection: "column",
               }}
             >
-              <h5 style={{ marginTop: "10px" }}>Sort By</h5>
-              <select name="sort" id="sort" className="filterSelect">
+              <h5 className="filterTitle">Sort By</h5>
+              <select
+                onChange={sortItems}
+                name="sort"
+                id="sort"
+                className="filterSelect"
+              >
                 <option default value="a">
                   A - Z
                 </option>
@@ -100,7 +134,9 @@ const Shop = () => {
             </div>
           </div>
         </div>
-        <div className="shopContent" id="shopContent"></div>
+        <div className="shopContent" id="shopContent">
+          {}
+        </div>
       </div>
     </>
   );

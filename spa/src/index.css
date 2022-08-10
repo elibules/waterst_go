@@ -130,6 +130,11 @@ nav {
   font-size: 13px;
 }
 
+.filterTitle {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
 .inputLabel {
   display: flex;
 }
